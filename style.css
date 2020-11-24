@@ -1,21 +1,4 @@
 ﻿@charset "UTF-8";
-/* CSS Document */
-
-body {
-    background-color: #c6cfd4;
-    margin-top: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
-}
-
-.logo {
-    width:400px;
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
 
 #backimage {
 
@@ -41,18 +24,24 @@ body {
     opacity: 0.7; 
 }
 
-#HeaderLogo {
+#HomeLogoContainer {
     width: 50%;
     display: table-cell;
     vertical-align: middle;
-    
 }
 
-#HeaderLink {
+#HomeLogo {
+    width: 400px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
+#HomeLink {
     display: table-cell;
     vertical-align: middle;
-    
 }
 
 #HomeContent {
@@ -60,12 +49,37 @@ body {
     z-index:-1;
 }
 
+body {
+    background-color: #c6cfd4;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+h1 {
+
+    color: #404040;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+h2 {
+    color: #404040;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #e5e3e1;
     display: block;
 }
 
@@ -75,10 +89,10 @@ li {
 
 li a {
     display: block;
-    color: black;
-    font-family:Arial;
-    font-weight:bold;
-    font-size:18px;
+    color: #404040;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 18px;
     text-align: center;
     padding: 16px 18px;
     text-decoration: none;
@@ -88,18 +102,101 @@ li a:hover {
     color: #FF0000;
 }
 
+.dandypage {
+
+    width: 1200px;
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.pageheader {
+    display: table;
+    background-color: #ffffff;
+    width: 100%;
+}
+
+.pagebanner {
+    background-color: #ffffff;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.greybar {
+    background-color: #e8e8e8;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    clear:both;
+}
+
+.textbox {
+    font-family: Arial;
+    font-size: 18px;
+    color: #564f25;
+    text-align: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pagecontent {
+    background-color: #ffffff;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.logoContainer {
+    width: 50%;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.pagethumb {
+    float: left;
+    width: 180px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+.pageimg {
+
+    width:100%;
+    
+}
+
+.pagelinks {
+    width:25%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.logo {
+    position: relative;
+    width: 400px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: 5%;
+}
+
 @media only screen and (max-width: 768px) {
 
     #HomeHeader {
         display: inline-block;
     }
 
-    #HeaderLogo {
+    #HomeLogo {
         width:100%;
         display: inline-block;
     }
 
-    #HeaderLink {
+    #HomeLink {
         display: inline-block;
     }
 
@@ -111,6 +208,8 @@ li a:hover {
         margin-top:40%;
     }
 }
+
+
 
 
 
