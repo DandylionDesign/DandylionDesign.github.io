@@ -75,6 +75,24 @@ h2 {
     text-align: center;
 }
 
+h2:hover {
+    color: #FF0000;
+}
+
+a {
+    color: #404040;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FF0000;
+        
+}
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -142,6 +160,8 @@ li a:hover {
 }
 
 .pagecontent {
+    /* Note that setting text-align:center allows the inline-block div to be centred */
+    text-align:center;
     background-color: #ffffff;
     width: 100%;
     padding-top: 10px;
@@ -161,7 +181,10 @@ li a:hover {
     padding-right: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
+}
 
+.centerContainer {
+    display:inline-block;
 }
 
 .pageimg {
