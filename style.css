@@ -79,6 +79,19 @@ h2:hover {
     color: #FF0000;
 }
 
+h3 {
+    color: #404040;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: left;
+    margin-bottom: 8px;
+}
+
+p {
+    margin-top:0px;
+}
+
 a {
     color: #404040;
     font-family: Arial;
@@ -159,6 +172,42 @@ li a:hover {
     margin-right: auto;
 }
 
+.textcontent {
+
+    float: left;
+    font-family: Arial;
+    font-size: 16px;
+    text-align:left;
+    padding-left:20px;
+    padding-right:20px;
+
+}
+
+.quotetext {
+
+    font-style: italic;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.sidetext {
+
+    width:75%;
+}
+
+.sideimage {
+
+    float:right;
+    width:15%;
+}
+
+.portrait {
+    float:right;
+    width: 200px;
+    height: auto;
+    max-width: 100%;
+}
+
 .pagecontent {
     /* Note that setting text-align:center allows the inline-block div to be centred */
     text-align:center;
@@ -169,6 +218,12 @@ li a:hover {
 }
 
 .logoContainer {
+    width: 50%;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.contactContainer {
     width: 50%;
     display: table-cell;
     vertical-align: middle;
