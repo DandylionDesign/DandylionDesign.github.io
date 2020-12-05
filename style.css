@@ -1,5 +1,10 @@
 ﻿@charset "UTF-8";
 
+:root {
+    --page-padding-dsktp: 40px; /* General padding for desktop layout */
+    --page-padding-mob: 30px; /* General padding for desktop layout */
+}
+
 #backimage {
 
     width: 100%;
@@ -20,8 +25,15 @@
     display: table;
     background-color: #e5e3e1;
     position: absolute;
-    width:100%;
-    opacity: 0.7; 
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    opacity: 0.7;
+}
+
+#HomeFooter {
+    display: none;
+    margin-top:-80px;
 }
 
 #HomeLogoContainer {
@@ -40,24 +52,34 @@
 }
 
 #HomeLink {
-    display: table-cell;
-    vertical-align: middle;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#HomeLinkMob {
+    padding-left: 20px;
+    padding-right: 20px;
+    display: none;
 }
 
 #HomeContent {
     width: 100%;
-    z-index:-1;
+    z-index: -1;
 }
+
+/*
+    GENERAL STYLING
+*/
 
 body {
     background-color: #c6cfd4;
     margin-top: 0px;
     margin-left: 0px;
     margin-right: 0px;
+    font-family: Arial;
 }
 
 h1 {
-
     color: #404040;
     font-family: Arial;
     font-weight: bold;
@@ -75,9 +97,9 @@ h2 {
     text-align: center;
 }
 
-h2:hover {
-    color: #FF0000;
-}
+    h2:hover {
+        color: #FF0000;
+    }
 
 h3 {
     color: #404040;
@@ -86,10 +108,11 @@ h3 {
     font-size: 18px;
     text-align: left;
     margin-bottom: 8px;
+    margin-top: 0px;
 }
 
 p {
-    margin-top:0px;
+    margin-top: 0px;
 }
 
 a {
@@ -101,10 +124,9 @@ a {
     text-decoration: none;
 }
 
-a:hover {
-    color: #FF0000;
-        
-}
+    a:hover {
+        color: #FF0000;
+    }
 
 ul {
     list-style-type: none;
@@ -118,33 +140,113 @@ li {
     float: left;
 }
 
-li a {
-    display: block;
-    color: #404040;
-    font-family: Arial;
-    font-weight: bold;
-    font-size: 18px;
-    text-align: center;
-    padding: 16px 18px;
-    text-decoration: none;
-}
+    li a {
+        display: block;
+        color: #404040;
+        font-family: Arial;
+        font-weight: bold;
+        font-size: 18px;
+        text-align: center;
+        padding-right:40px;
+        text-decoration: none;
+    }
 
-li a:hover {
-    color: #FF0000;
-}
+        li a:hover {
+            color: #FF0000;
+        }
+
+
+/*
+    TOP LEVEL PAGE LAYOUT
+*/
 
 .dandypage {
-
     width: 1200px;
     max-width: 100%;
     margin-right: auto;
     margin-left: auto;
 }
 
+
+/*
+    PAGE HEADER CLASSES
+*/
+
 .pageheader {
     display: table;
     background-color: #ffffff;
     width: 100%;
+    padding-top: 40px;
+}
+
+.linkheader {
+    display: table;
+    background-color: #ffffff;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+/* Page links are in header */
+.pagelinks {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.logoContainer {
+    width: 40%;
+    display: table-cell;
+    vertical-align: top;
+}
+
+.blankContainer {
+    width: 40%;
+    display: table-cell;
+    vertical-align: top;
+}
+
+.rightHeaderContainer {
+    width: 50%;
+    display: table-cell;
+    vertical-align: top;
+    padding-right:20px;
+}
+
+.contactContainer {
+
+    float:left;
+   
+}
+
+.logo {
+
+    position: relative;
+    width: 400px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: var(--page-padding-dsktp);
+}
+
+.contactImg {
+    position: relative;
+    width: 320px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left:0;
+}
+
+.wishlist {
+    float: right;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 12px;
+    text-align: center;
+    padding-right: var(--page-padding-dsktp);
+}
+
+.wishlistimg {
+    width: 70px;
 }
 
 .pagebanner {
@@ -157,9 +259,14 @@ li a:hover {
 .greybar {
     background-color: #e8e8e8;
     width: 100%;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     clear:both;
+}
+
+.locator {
+    padding-left: var(--page-padding-dsktp);
+    font-size: 18px;
 }
 
 .textbox {
@@ -173,32 +280,24 @@ li a:hover {
 }
 
 .textcontent {
-
     float: left;
     font-family: Arial;
     font-size: 16px;
-    text-align:left;
-    padding-left:20px;
-    padding-right:20px;
-
-}
-
-.quotetext {
-
-    font-style: italic;
-    padding-left: 20px;
-    padding-right: 20px;
+    text-align: left;
+    padding-top:20px;
+    padding-left: var(--page-padding-dsktp);
+    padding-right: var(--page-padding-dsktp);
 }
 
 .sidetext {
-
-    width:75%;
+    width: 72%;
+    padding-right:0px;
 }
 
 .sideimage {
-
-    float:right;
-    width:15%;
+    float: right;
+    width: 18%;
+    padding-left: 0px;
 }
 
 .portrait {
@@ -207,6 +306,15 @@ li a:hover {
     height: auto;
     max-width: 100%;
 }
+
+.video {
+    float: right;
+    width: 200px;
+    height: auto;
+    max-width: 100%;
+    visibility: hidden;
+}
+
 
 .pagecontent {
     /* Note that setting text-align:center allows the inline-block div to be centred */
@@ -217,17 +325,6 @@ li a:hover {
     padding-bottom: 10px;
 }
 
-.logoContainer {
-    width: 50%;
-    display: table-cell;
-    vertical-align: middle;
-}
-
-.contactContainer {
-    width: 50%;
-    display: table-cell;
-    vertical-align: middle;
-}
 
 .pagethumb {
     float: left;
@@ -248,25 +345,23 @@ li a:hover {
     
 }
 
-.pagelinks {
-    width:25%;
-    margin-left:auto;
-    margin-right:auto;
-}
 
-.logo {
-    position: relative;
-    width: 400px;
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin-left: 5%;
-}
 
 @media only screen and (max-width: 768px) {
 
     #HomeHeader {
         display: inline-block;
+        
+    }
+
+    #HomeFooter {
+        display: table;
+        background-color: #e5e3e1;
+        position: absolute;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        width: 100%;
+        opacity: 0.7;
     }
 
     #HomeLogo {
@@ -275,15 +370,146 @@ li a:hover {
     }
 
     #HomeLink {
-        display: inline-block;
+        display:none;
+    }
+
+    #HomeLinkMob {
+        display: initial;
+    }
+
+    li {
+        float:none;
     }
 
     li a {
-        font-size: 14px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 10px;
     }
 
     #backimage {
         margin-top:40%;
+    }
+
+    .dandypage {
+
+        width: 100%;
+        
+    }
+
+    .pageheader {
+        position: initial;
+        display: block;
+    }
+
+    .linkheader {
+        position:initial;
+        display: block;
+    }
+
+    /* Page links are in header */
+    .pagelinks {
+        position: initial;
+        display: block;
+    }
+
+    .logoContainer {
+        width: 350px;
+        position: initial;
+        display: block;
+    }
+
+    .logo {
+        width: 300px;
+        position: initial;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .blankContainer {
+        position: initial;
+        display: block;
+    }
+
+    .rightHeaderContainer {
+        width: 350px;
+        position: initial;
+        display: block;
+        padding-right:0px;
+    }
+
+    .contactContainer {
+        display:none;
+    }
+
+    .contactImg {
+        position: initial;
+    }
+
+    .wishlist {
+        position: initial;
+        padding-right:0px;
+        margin-top:-25px;
+    }
+
+    .wishlistimg {
+        position: initial;
+        width:40px;
+    }
+
+    .greybar {
+        
+    }
+
+    .pagecontent {
+        
+    }
+
+    .centerContainer {
+        
+    }
+
+    .locator {
+        padding-left: 0px;
+        text-align: center;
+    }
+
+    .textcontent {
+        
+    }
+
+    .sidetext {
+        float:none;
+        width: 290px;
+        text-align: justify;
+        padding-left: var(--page-padding-mob);
+        padding-right: var(--page-padding-mob);
+    }
+
+    .sideimage {
+        float: none;
+        width: 350px;
+        padding: 0px;
+        text-align:center;
+    }
+
+    .portrait {
+        float:none;
+        
+    }
+
+    .video {
+        
+    }
+
+
+    .pagethumb {
+        float: none;
+        width: 220px;
+    }
+
+    .centerContainer {
+        
     }
 }
 
