@@ -2,7 +2,9 @@
 
 :root {
     --page-padding-dsktp: 40px; /* General padding for desktop layout */
-    --page-padding-mob: 30px; /* General padding for desktop layout */
+    --page-padding-mob: 40px; /* General padding for desktop layout */
+    --left-padding-mob: 30px; /* General padding for desktop layout */
+    --right-padding-mob: 30px; /* General padding for desktop layout */
 }
 
 #backimage {
@@ -398,8 +400,11 @@ li {
     }
 
     .pageheader {
+        width:100%;
         position: initial;
         display: block;
+        padding-left:0px;
+        padding-right:0px;
     }
 
     .linkheader {
@@ -414,7 +419,7 @@ li {
     }
 
     .logoContainer {
-        width: 350px;
+        width: 100%;
         position: initial;
         display: block;
     }
@@ -428,11 +433,11 @@ li {
 
     .blankContainer {
         position: initial;
-        display: block;
+        display: none;
     }
 
     .rightHeaderContainer {
-        width: 350px;
+        width: 100%;
         position: initial;
         display: block;
         padding-right:0px;
@@ -448,7 +453,7 @@ li {
 
     .wishlist {
         position: initial;
-        padding-right:0px;
+        padding-right:10px;
         margin-top:-25px;
     }
 
@@ -466,7 +471,7 @@ li {
     }
 
     .centerContainer {
-        
+        width: 100%;
     }
 
     .locator {
@@ -475,20 +480,20 @@ li {
     }
 
     .textcontent {
-        
+        width: 100%;
     }
 
     .sidetext {
         float:none;
-        width: 290px;
+        width: initial;
         text-align: justify;
-        padding-left: var(--page-padding-mob);
-        padding-right: var(--page-padding-mob);
+        padding-left: var(--left-padding-mob);
+        padding-right: var(--right-padding-mob);
     }
 
     .sideimage {
         float: none;
-        width: 350px;
+        width: 100%;
         padding: 0px;
         text-align:center;
     }
@@ -505,12 +510,12 @@ li {
 
     .pagethumb {
         float: none;
-        width: 220px;
+        width: 60%;
+        margin-left:auto;
+        margin-right:auto;
     }
 
-    .centerContainer {
-        
-    }
+    
 }
 
 
