@@ -249,6 +249,7 @@ li {
 
 .wishlistimg {
     width: 70px;
+    
 }
 
 .pagebanner {
@@ -293,7 +294,8 @@ li {
 
 .sidetext {
     width: 72%;
-    padding-right:0px;
+    padding-right: 0px;
+    text-align: justify;
 }
 
 .sideimage {
@@ -454,7 +456,7 @@ li {
     .wishlist {
         position: initial;
         padding-right:10px;
-        margin-top:-25px;
+        margin-top:-15px;
     }
 
     .wishlistimg {
@@ -480,7 +482,11 @@ li {
     }
 
     .textcontent {
-        width: 100%;
+        float: none;
+        width: initial;
+        text-align: justify;
+        padding-left: var(--left-padding-mob);
+        padding-right: var(--right-padding-mob);
     }
 
     .sidetext {
