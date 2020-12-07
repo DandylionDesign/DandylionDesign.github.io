@@ -181,6 +181,10 @@ li {
     padding-top: 40px;
 }
 
+.pagefooter {
+    display: none;
+}
+
 .linkheader {
     display: table;
     background-color: #ffffff;
@@ -217,6 +221,10 @@ li {
 
     float:left;
    
+}
+
+.footcontactContainer {
+    display: none;
 }
 
 .logo {
@@ -409,6 +417,14 @@ li {
         padding-right:0px;
     }
 
+    .pagefooter {
+        display: initial;
+        width: 100%;
+        position: initial;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
     .linkheader {
         position:initial;
         display: block;
@@ -449,8 +465,22 @@ li {
         display:none;
     }
 
+    .footcontactContainer {
+        display: block;
+        text-align:center;
+        width:100%;
+        padding-top:10px;
+        padding-bottom:10px;
+
+    }
+
     .contactImg {
+
         position: initial;
+        width:80%;
+        margin-left:auto;
+        margin-right:auto;
+
     }
 
     .wishlist {
